@@ -1,0 +1,53 @@
+### W08-P1: a. 依學號從後往前，顯示對應的四筆 blog，結果圖片請參考 w01-p1.png; b. 顯示 filter 篩選按鈕，結果圖片請參考 w03-p1.png
+
+![](w08-p1a.png)
+
+![](w08-p11.png)
+
+### W08-P2: 請將 9 筆 blogs 資訊放入陣列 blogData_xx.js 中，並能套入第 1 題的 App_xx.js 中，要能顯示所有的 blogs
+
+![](w08-p2.png)
+
+### W08-P3: 建立 components 目錄，並將陣列內的 9 筆 blogs 放入 BlogList_xx.js 與 Blog_xx.js 中
+
+![](w08-p3-1.png)
+
+![](w08-p3-2.png)
+
+### W08-P4: 實作 Delete 按鈕，能夠刪除一筆 blog。結果圖片請參考 w06-p3.png，請明確列出相關的 code 與對應的結果圖片，不需要實作 local storage，要透過 Chrome DevTool 之 React components 來顯示
+
+![](w08-p4.png)
+
+### W08-P5: 實作 Clear All Blogs 按鈕，能夠刪除所有 blogs
+
+![](w08-p5.png)
+
+### W08-P6: 實作 filter 功能
+
+![](w08-p6.png)
+
+### W08-P7: 實作 Alert_xx.js，能夠顯示第 4 題 Delete 及第 5 題 Clear All Blogs 的訊息，顏色都是 danger 的紅色。
+
+![](w08-p7-1.png)
+
+![](w08-p7-2.png)
+
+![](w08-p7-3.png)
+
+### W08-logs: show all four logs done today
+
+![](w08-logs.png)
+
+```
+$ git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2022-10-25"
+
+6fc4bd7 htchung Wed Oct 26 21:26:30 2022 +0800  W08-P7: 實作 Alert_xx.js，能夠顯示第 4 題 Delete 及第 5 題 Clear All Blogs 的訊息，顏色都是 danger 的紅色。
+f0f3c7f htchung Wed Oct 26 20:43:49 2022 +0800  W08-P5: 實作 Clear All Blogs 按鈕，能夠刪除所有 blogs
+ee9242e htchung Wed Oct 26 20:31:54 2022 +0800  W08-P4: 實作 Delete 按鈕，能夠刪除一筆 blog。結果圖片請參考 w06-p3.png，請明確列出相關的code與對應的結果圖片，不
+需要實作local storage，要透過 Chrome DevTool之React components 來顯示
+67ef6b1 htchung Wed Oct 26 20:01:41 2022 +0800  W08-P3: 建立 components 目錄，並將陣列內的 9 筆 blogs 放入 BlogList_xx.js 與 Blog_xx.js 中
+9114064 htchung Wed Oct 26 19:34:17 2022 +0800  W08-P2: 請將 9 筆 blogs 資訊放入陣列 blogData_xx.js 中，並能套入第 1 題的 App_xx.js 中，要能顯示所有的 blogs
+3e31e90 htchung Wed Oct 26 19:33:20 2022 +0800  W08-P1: a. 依學號從後往前，顯示對應的四筆 blog，結果圖片請參考 w01-p1.png; b. 顯示 filter 篩選按鈕，結果圖片請參
+考 w03-p1.png
+
+```
