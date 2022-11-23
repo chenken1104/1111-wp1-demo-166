@@ -22,7 +22,7 @@ const P4Page_66 = () => {
     <section className="main-section">
       <div className="filter-left">
         <div className="left-content">
-          <form className="input-form-btn">
+          <form className="input-form">
             <input type="text" className="search-input" placeholder="search..." />
           </form>
           <h4>Company</h4>
@@ -30,20 +30,20 @@ const P4Page_66 = () => {
             <button className="company-btn"
             onClick={() => filterItems("all")}>all</button>
             <button className="company-btn"
-            onClick={() => filterItems("ikea")}>ikea</button>
+            onClick={() => filterItems("Ikea")}>ikea</button>
             <button className="company-btn"
-            onClick={() => filterItems("marcos")}>marcos</button>
+            onClick={() => filterItems("Marcos")}>marcos</button>
             <button className="company-btn"
-            onClick={() => filterItems("caressa")}>caressa</button>
+            onClick={() => filterItems("Caressa")}>caressa</button>
           </article>
         </div>
       </div>
       <div className="products-right">
         <div className="products-container">
           {products.map((product) => {
-            const {id, img, title, desc} = product;
+            const {id, img, category, title, desc} = product;
             return (
-              <Product_66 key={id} img={img} title={title} desc={desc}/>
+              <Product_66 key={id} img={img} category={category} title={title} desc={desc}/>
             )
           })}
         </div>

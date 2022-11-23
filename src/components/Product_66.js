@@ -5,7 +5,7 @@ const Product_66 = ({ id, img, title, desc}) => {
       <img 
        src={img} 
        className="single-product-img img" 
-       alt="high-back bench" />
+       alt="utopia sofa" />
       <footer>
         <h5 className="name">{title}</h5>
         <span className="price">{desc}</span>

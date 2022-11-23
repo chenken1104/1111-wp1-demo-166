@@ -88,14 +88,14 @@ const P6Page_66 = () => {
               >
                 caressa
               </button>
-            </article>
-          </div>
-          <button className="clear-btn" onClick={clearAllProducts}>
+              <button className="clear-btn" onClick={clearAllProducts}>
             clear All
           </button>
           <button className="fetch-btn" onClick={fetchAllProducts}>
             Fetch All
           </button>
+          </article>
+        </div>
         </div>
         {alert.show && <Alert_66 {...alert} removeAlert={showAlert}/>}
         <div className="products-right">
