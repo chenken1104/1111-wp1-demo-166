@@ -1,6 +1,8 @@
 import React from 'react'
+import { useBlogContext } from '../App_66'
 
-const Blog_66 = ({id, img, title, desc, category, removeItem}) => {
+const Blog_66 = ({id, img, title, desc, category}) => {
+  const {removeItem} = useBlogContext();
   return (
     <article className="blog">
     <img

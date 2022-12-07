@@ -1,4 +1,4 @@
-import React, { useState,useEffect, useContext} from 'react';
+import React, { useState, useEffect, useContext} from 'react';
 import data from './blogData_66'
 import Alert_66 from './components/Alert_66'
 
@@ -106,5 +106,6 @@ const Blog_66 = ({id, img, title, desc, category}) => {
   </article>
   )
 }
+
 
 export default App1_66;

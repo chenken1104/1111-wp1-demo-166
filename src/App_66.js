@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import data from './blogData_66';
+import React, { useState, useEffect, useContext} from 'react';
+import data from './blogData_66'
+import Alert_66 from './components/Alert_66'
 import BlogList_66 from './components/BlogList_66';
-import Alert_66 from './components/Alert_66';
+
+const BlogContext = React.createContext();
 
 const App_66 = () => {
   const [blogs, setBlogs] = useState(data);
@@ -37,7 +39,8 @@ const App_66 = () => {
   }
 
   return (
-    <>
+    <BlogContext.Provider value={{blogs, alert,
+    removeItem, clearBlogs, filterItems, showAlert}}>
     <section className="blogs">
     {alert.show && <Alert_66 {...alert} removeAlert={showAlert} />}
       <div className="section-title">
@@ -49,14 +52,18 @@ const App_66 = () => {
         <button type="button" className="filter-btn" onClick={() => filterItems('travel')}>travel</button>
       </div>
       <div className="blogs-center">
-        <BlogList_66 key={1} blogs={blogs} removeItem={removeItem}/>
+        <BlogList_66 key={1}/>
       </div>
       <button className='clear-btn' onClick={clearBlogs}>
         clear all blogs
       </button>
     </section>
-    </>
+    </BlogContext.Provider>
   );
 };
 
-export default App_66;
+const useBlogContext = () => {
+  return useContext(BlogContext);
+}
+
+export { App_66, useBlogContext };
