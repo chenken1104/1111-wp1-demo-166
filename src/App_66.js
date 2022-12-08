@@ -1,30 +1,31 @@
-import React, { useState, useEffect, useContext} from 'react';
-import data from './blogData_66'
-import Alert_66 from './components/Alert_66'
-import BlogList_66 from './components/BlogList_66';
+import React,{Component} from 'react';
+import { useState } from 'react';
+import { useMenuContext_66 } from './MenuContext';
+import Category_66 from './components/Category_66';
+import Menu_66 from './components/Menu_66';
+import items from './data';
 
-import { useBlogContext_66 } from './BlogContext_66';
+const allCategories = ['all', 'breakfast', 'lunch', 'shakes', '89'];
 
 const App_66 = () => {
-  const { blogs, alert,removeItem, clearBlogs, filterItems,
-  showAlert } = useBlogContext_66();
+  const {menuItems, filterItems, 
+  categories} = useMenuContext_66()
+
+
   return (
-    <section className="blogs">
-    {alert.show && <Alert_66 {...alert} removeAlert={showAlert} />}
-      <div className="section-title">
-        <h2>CSS Grid using breakpoints</h2>
-      </div>
-      <div className="filter-container">
-        <button type="button" className="filter-btn" onClick={() => filterItems('all')}>all</button>
-        <button type="button" className="filter-btn" onClick={() => filterItems('lifestyle')}>lifestyle</button>
-        <button type="button" className="filter-btn" onClick={() => filterItems('travel')}>travel</button>
-      </div>
-      <div className="blogs-center">
-        <BlogList_66 key={1}/>
-      </div>
-      <button className='clear-btn' onClick={clearBlogs}>
-        clear all blogs
-      </button>
+    <section className="menu">
+    {/* title */}
+    <div className="title">
+      <h2>our menu 208410166</h2>
+      <div className="underline"></div>
+    </div>
+    {/* filter buttons */}
+    <Category_66 categories={categories} filterItems={filterItems}/>
+    {/*menu items*/}
+    <Menu_66 items={menuItems}/>
+      
+       {/* javascript */}
+    <script src="app.js"></script>
     </section>
   );
 };
