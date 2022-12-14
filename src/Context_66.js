@@ -27,7 +27,11 @@ const AppProvider_66 = ({children}) => {
     dispatch({ type: 'INCREASE', payload: id });
   }
 
-  return <AppContext_66.Provider value={{...state, clearCart, increase}}>
+  const reduce = (id) => {
+    dispatch({ type: 'REDUCE', payload: id });
+  }
+
+  return <AppContext_66.Provider value={{...state, clearCart, increase, reduce}}>
     {children}
   </AppContext_66.Provider>
 };
