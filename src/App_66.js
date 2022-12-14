@@ -1,32 +1,26 @@
-import React,{Component} from 'react';
-import { useState } from 'react';
-import { useMenuContext_66 } from './MenuContext';
-import Category_66 from './components/Category_66';
-import Menu_66 from './components/Menu_66';
-import items from './data';
+import React from 'react';
 
-const allCategories = ['all', 'breakfast', 'lunch', 'shakes', '89'];
+import { useGlobalContext_66 } from './Context_66';
+
+// components
+import Navbar_66 from './components/Navbar_66';
+import CartContainer_66 from './components/CartContainer_66';
+// items
 
 const App_66 = () => {
-  const {menuItems, filterItems, 
-  categories} = useMenuContext_66()
-
-
+  const { loading, cart } = useGlobalContext_66();
+  // if (loading) {
+  //   return (
+  //     <div className='loading'>
+  //       <h1>Loading...</h1>
+  //     </div>
+  //   );
+  // }
   return (
-    <section className="menu">
-    {/* title */}
-    <div className="title">
-      <h2>our menu 208410166</h2>
-      <div className="underline"></div>
-    </div>
-    {/* filter buttons */}
-    <Category_66 categories={categories} filterItems={filterItems}/>
-    {/*menu items*/}
-    <Menu_66 items={menuItems}/>
-      
-       {/* javascript */}
-    <script src="app.js"></script>
-    </section>
+    <main>
+      <Navbar_66 />
+      <CartContainer_66 />
+    </main>
   );
 };
 

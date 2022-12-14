@@ -1,84 +1,30 @@
-const menu = [
-  {
-    id: 1,
-    title: 'buttermilk pancakes',
-    category: 'breakfast',
-    price: 15.99,
-    img: './images/item-1.jpeg',
-    desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
-  },
-  {
-    id: 2,
-    title: 'diner double',
-    category: 'lunch',
-    price: 13.99,
-    img: './images/item-2.jpeg',
-    desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
-  },
-  {
-    id: 3,
-    title: 'godzilla milkshake',
-    category: 'shakes',
-    price: 6.99,
-    img: './images/item-3.jpeg',
-    desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
-  },
-  {
-    id: 4,
-    title: 'country delight',
-    category: 'breakfast',
-    price: 20.99,
-    img: './images/item-4.jpeg',
-    desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `,
-  },
-  {
-    id: 5,
-    title: 'egg attack',
-    category: 'lunch',
-    price: 22.99,
-    img: './images/item-5.jpeg',
-    desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
-  },
-  {
-    id: 6,
-    title: 'oreo dream',
-    category: 'shakes',
-    price: 18.99,
-    img: './images/item-6.jpeg',
-    desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
-  },
-  {
-    id: 7,
-    title: 'bacon overflow',
-    category: 'breakfast',
-    price: 8.99,
-    img: './images/item-7.jpeg',
-    desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird `,
-  },
-  {
-    id: 8,
-    title: 'american classic',
-    category: 'lunch',
-    price: 12.99,
-    img: './images/item-8.jpeg',
-    desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut  `,
-  },
-  {
-    id: 9,
-    title: 'quarantine buddy',
-    category: 'shakes',
-    price: 16.99,
-    img: './images/item-9.jpeg',
-    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
-  },
-  {
-    id: 10,
-    title: 'bison steak',
-    category: '89',
-    price: 22.99,
-    img: './images/item-10.jpeg',
-    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
-  },
-];
-
-export default menu;
+export default [
+    {
+        "id": "rec1JZlfCIBOPdcT2",
+        "title": "Samsung Galaxy S8",
+        "price": "399.99",
+        "img": "https://dl.airtable.com/.attachments/64b266ad865098befbda3c3577a773c9/24497852/yedjpkwxljtb75t3tezl.png",
+        "amount": 1
+    },
+    {
+        "id": "recB6qcHPxb62YJ75",
+        "title": "google pixel",
+        "price": "499.99",
+        "img": "https://dl.airtable.com/.attachments/91c88ae8c1580e2b762ecb3f73ed1eed/a633139a/phone-1_gvesln.png",
+        "amount": 1
+    },
+    {
+        "id": "recdRxBsE14Rr2VuJ",
+        "title": "Xiaomi Redmi Note 2",
+        "price": "699.99",
+        "img": "https://dl.airtable.com/.attachments/bae9208dc34f35128749ecda5b999e84/337c285d/phone-3_h2s6fo.png",
+        "amount": 1
+    },
+    {
+        "id": "recwTo160XST3PIoW",
+        "title": "Samsung Galaxy S7",
+        "price": "599.99 ",
+        "img": "https://dl.airtable.com/.attachments/91ee456448cef47deec553a2ea3fa8ad/b08bec68/phone-2_ohtt5s.png",
+        "amount": 1
+    }
+]

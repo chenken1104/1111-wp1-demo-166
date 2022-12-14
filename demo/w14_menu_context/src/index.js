@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.scss';
+import './index.css';
 import App_66 from './App_66';
-
-import { AppProvider_66 } from './Context_66';
+import { MenuContextProvider } from './MenuContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppProvider_66>
-      <App_66 />
-    </AppProvider_66>
+    <MenuContextProvider>
+    <App_66 />
+    </MenuContextProvider>
   </React.StrictMode>
 );
+
