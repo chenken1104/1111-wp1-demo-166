@@ -8,14 +8,22 @@ const AppContext_66 = React.createContext();
 const initialState = {
   loading: false,
   cart: cartItems,
-  amount: 0,
-  total: 0,
+  amount: 4,
+  total: 999.9,
 }
 
 const AppProvider_66 = ({children}) => {
   const [state, dispatch] = useReducer(Reducer_66, initialState);
-  return <AppContext_66.Provider value={{...state}}>
-     {children}
+  const clearCart = () => {
+    dispatch({ type: 'CLEAR_CART'});
+  }
+
+  const increase = (id) => {
+    dispatch({ type: 'INCREASE', payload: id });
+  }
+
+  return <AppContext_66.Provider value={{...state, clearCart, increase}}>
+    {children}
   </AppContext_66.Provider>
 };
 
